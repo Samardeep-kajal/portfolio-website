@@ -2,6 +2,7 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 
 function App() {
   const helloArray = ["Olá", "Hello", "Bonjour", "नमस्ते"];
@@ -29,11 +30,14 @@ function App() {
             I create full stack web applications.
           </p>
           <p className="mt-5 text-lg w-2/4">
-            I am pursuing my Bachelor's degree in Information Technology,
-            graduating in 2024. I have done numerous full stack web development
-            projects to showcase my enthusiasm in development.
+            I am currently pursuing my Bachelor's degree in Information
+            Technology and am set to graduate in 2024. Throughout my academic
+            journey, I have undertaken various full-stack web development
+            projects, demonstrating my passion and dedication to software
+            development.
           </p>
           <Skills />
+          <Projects />
           {/* Footer */}
           <footer className="mt-10 py-6 text-center text-gray-600 bg-gray-200">
             <p>&copy; 2024 Your Name. All rights reserved.</p>
