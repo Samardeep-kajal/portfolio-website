@@ -12,3 +12,4 @@ export { default as mongodbLogo } from "./mongodb.svg";
 export { default as nodeLogo } from "./nodejs.svg";
 export { default as reactLogo } from "./reactjs.svg";
 export { default as reduxLogo } from "./redux.svg";
+export { default as externalLink } from "./externalLink.svg";
