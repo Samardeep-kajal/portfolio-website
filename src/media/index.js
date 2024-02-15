@@ -13,3 +13,9 @@ export { default as nodeLogo } from "./nodejs.svg";
 export { default as reactLogo } from "./reactjs.svg";
 export { default as reduxLogo } from "./redux.svg";
 export { default as externalLink } from "./externalLink.svg";
+export { default as savvySliceLanding } from "./savvySlice/savvySliceLanding.JPG";
+export { default as savvySliceMenu } from "./savvySlice/savvySliceMenu.JPG";
+
+export { default as savvySliceCheckout } from "./savvySlice/savvySliceCheckout.JPG";
+
+export { default as savvySlicePayment } from "./savvySlice/savvySlicePayment.JPG";
