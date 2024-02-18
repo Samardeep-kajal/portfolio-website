@@ -5,6 +5,11 @@ import {
   savvySliceMenu,
   savvySliceCheckout,
   savvySlicePayment,
+  selfJournalDashboard,
+  selfJournalDisplay,
+  selfJournalLanding,
+  selfJournalSignup,
+  selfJournalTemplate,
 } from "../media";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -14,7 +19,8 @@ const Projects = () => {
     <div className="mt-24">
       <h1 className="text-5xl font-Poppins mb-8">Projects</h1>
       <div className="flex flex-wrap justify-center -mx-4">
-        <div className="w-full ">
+        <div className="w-full ml-5">
+          <h2 className="text-2xl font-semibold mb-2">Savvy Slice!</h2>
           {/* <div className="project flex flex-col md:flex-row"> */}
           <Carousel
             showArrows={true}
@@ -36,7 +42,6 @@ const Projects = () => {
             </div>
           </Carousel>
           <div className="mt-4">
-            <h2 className="text-2xl font-semibold mb-2">Savvy Slice!</h2>
             <p className="text-base mb-4">
               Savvy Slice is an innovative online pizza ordering platform
               developed using the MERN (MongoDB, Express.js, React.js, Node.js)
@@ -49,7 +54,7 @@ const Projects = () => {
             </p>
             <div className="flex flex-wrap mb-4">
               <span className="bg-[#415A77] rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
-                React
+                ReactJS
               </span>
               <span className="bg-[#415A77] rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
                 Node.js
@@ -59,6 +64,9 @@ const Projects = () => {
               </span>
               <span className="bg-[#415A77] rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
                 MongoDB
+              </span>
+              <span className="bg-[#415A77] rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                MaterialUI
               </span>
             </div>
             <div className="flex flex flex-wrap">
@@ -79,6 +87,83 @@ const Projects = () => {
                 />
               </button>
               {/* </div> */}
+            </div>
+          </div>
+          {/* Add more projects here */}
+        </div>
+        <div className="flex flex-wrap justify-center -mx-4 mt-10">
+          <div className="w-full ml-10">
+            <h2 className="text-2xl font-semibold mb-2">SelfJournal</h2>
+            {/* <div className="project flex flex-col md:flex-row"> */}
+            <Carousel
+              showArrows={true}
+              showThumbs={false}
+              showIndicators={false}
+              className="w-3/4"
+            >
+              <div>
+                <img src={selfJournalLanding} alt="Project Image" />
+              </div>
+              <div>
+                <img src={selfJournalSignup} alt="Project Image" />
+              </div>
+              <div>
+                <img src={selfJournalTemplate} alt="Project Image" />
+              </div>
+              <div>
+                <img src={selfJournalDashboard} alt="Project Image" />
+              </div>
+              <div>
+                <img src={selfJournalDisplay} alt="Project Image" />
+              </div>
+            </Carousel>
+            <div className="mt-4">
+              <p className="text-base mb-4">
+                The Self Journaling Platform is a transformative web application
+                designed to empower users on their journey of self-discovery and
+                personal growth. With intuitive journaling features, robust data
+                privacy measures, the platform provides a secure and
+                user-friendly space for individuals to reflect on their
+                thoughts, emotions, and experiences. This Self Journaling
+                Platform offers a powerful tool for individuals seeking to
+                cultivate a deeper understanding of themselves and live more
+                intentionally.
+              </p>
+              <div className="flex flex-wrap mb-4">
+                <span className="bg-[#415A77] rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                  ReactJS
+                </span>
+                <span className="bg-[#415A77] rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                  Node.js
+                </span>
+                <span className="bg-[#415A77] rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                  Express
+                </span>
+                <span className="bg-[#415A77] rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                  MongoDB
+                </span>
+                <span className="bg-[#415A77] rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                  react-redux
+                </span>
+              </div>
+              <div className="flex flex flex-wrap">
+                <button className="border-black text border-2 px-3 mr-2 h-14 font-semibold hover:bg-[#778DA9] rounded-md flex items-center transition-colors duration-300 ease-in-out">
+                  Check Github{" "}
+                  <img
+                    src={externalLink}
+                    className="h-5 w-5 ml-1"
+                    alt="External Link"
+                  />
+                </button>
+                <button className="border-black border-2 px-3 mr-2 h-14 font-semibold hover:bg-[#778DA9] rounded-md flex items-center transition-colors duration-300 ease-in-out">
+                  See Project{" "}
+                  <img
+                    src={externalLink}
+                    className="h-5 w-5 ml-1"
+                    alt="External Link"
+                  />
+                </button>
+              </div>
             </div>
           </div>
         </div>

@@ -33,19 +33,18 @@ function App() {
             I am currently pursuing my Bachelor's degree in Information
             Technology and am set to graduate in 2024. Throughout my academic
             journey, I have undertaken various full-stack web development
-            projects, demonstrating my passion and dedication to software
+            projects, demonstrating my passion and dedication for software
             development.
           </p>
           <Skills />
-          <Projects />
+          <Projects className="ml-5" />
           {/* Footer */}
           <footer className="mt-10 py-6 text-center text-gray-600 bg-gray-200">
             <p>&copy; 2024 Your Name. All rights reserved.</p>
-            <p>Designed with ❤️ by You</p>
+            <p>Designed with ❤️ by me</p>
           </footer>
         </div>
       </div>
-      {/* <LogoAnim /> */}
     </div>
   );
 }
