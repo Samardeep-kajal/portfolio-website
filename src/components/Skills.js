@@ -14,6 +14,10 @@ import {
   nodeLogo,
   reactLogo,
   reduxLogo,
+  nextLogo,
+  nestLogo,
+  typescriptLogo,
+  postgresLogo,
 } from "../media";
 
 const Skills = () => {
@@ -23,6 +27,10 @@ const Skills = () => {
       <h1 className="mt-5 text-3xl">Full Stack</h1>
       <div className="mt-3 ml-11 grid grid-cols-2 md:grid-cols-4 gap-4 justify-around">
         <div className="logo-card flex flex-col items-center">
+          <img src={nextLogo} className="h-20 w-20" alt="Git Logo" />
+          <p className="text-sm mt-2 text-center">Next.js</p>
+        </div>
+        <div className="logo-card flex flex-col items-center">
           <img src={reactLogo} className="h-20 w-20" alt="Git Logo" />
           <p className="text-sm mt-2 text-center">ReactJS</p>
         </div>
@@ -31,12 +39,24 @@ const Skills = () => {
           <p className="text-sm mt-2 text-center">NodeJS</p>
         </div>
         <div className="logo-card flex flex-col items-center">
+          <img src={nestLogo} className="h-20 w-20" alt="Postman Logo" />
+          <p className="text-sm mt-2 text-center">NestJS</p>
+        </div>
+        <div className="logo-card flex flex-col items-center">
           <img src={reduxLogo} className="h-20 w-20" alt="Figma Logo" />
           <p className="text-sm mt-2 text-center">React-redux</p>
         </div>
         <div className="logo-card flex flex-col items-center">
+          <img src={materialuiLogo} className="h-20 w-20" alt="Figma Logo" />
+          <p className="text-sm mt-2 text-center">MaterialUI</p>
+        </div>
+        <div className="logo-card flex flex-col items-center">
           <img src={mongodbLogo} className="h-20 w-20" alt="Figma Logo" />
           <p className="text-sm mt-2 text-center">MongoDB</p>
+        </div>
+        <div className="logo-card flex flex-col items-center">
+          <img src={postgresLogo} className="h-20 w-20" alt="Figma Logo" />
+          <p className="text-sm mt-2 text-center">PostgreSQL</p>
         </div>
         <div className="logo-card flex flex-col items-center">
           <img src={htmlLogo} className="h-20 w-20" alt="VSCode Logo" />
@@ -46,11 +66,8 @@ const Skills = () => {
           <img src={cssLogo} className="h-20 w-20" alt="Figma Logo" />
           <p className="text-sm mt-2 text-center">CSS3</p>
         </div>
-        <div className="logo-card flex flex-col items-center">
-          <img src={materialuiLogo} className="h-20 w-20" alt="Figma Logo" />
-          <p className="text-sm mt-2 text-center">MaterialUI</p>
-        </div>
       </div>
+      {/* LANGUAGE Section */}
       <h1 className="mt-3 text-3xl">Languages</h1>
       <div className="mt-3 justify-evenly flex flex-row flex-wrap">
         <div className="logo-card">
@@ -61,12 +78,16 @@ const Skills = () => {
           <img src={jsLogo} className="h-20 w-20" alt="Postman Logo" />
           <p className="text-sm mt-2 text-center">JavaScript</p>
         </div>
+        <div className="logo-card">
+          <img src={typescriptLogo} className="h-20 w-20" alt="Postman Logo" />
+          <p className="text-sm mt-2 text-center">Typescript</p>
+        </div>
       </div>
       <h1 className="mt-3 text-3xl">Tools</h1>
       <div className="mt-3 justify-evenly flex flex-row flex-wrap">
         <div className="logo-card">
-          <img src={gitLogo} className="h-20 w-20" alt="Git Logo" />
-          <p className="text-sm mt-2 text-center">Git</p>
+          <img src={githubLogo} className="h-20 w-20" alt="Git Logo" />
+          <p className="text-sm mt-2 text-center">GitHub</p>
         </div>
         <div className="logo-card">
           <img src={postmanLogo} className="h-20 w-20" alt="Postman Logo" />

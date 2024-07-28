@@ -42,7 +42,7 @@ const Projects = () => {
             </div>
           </Carousel>
           <div className="mt-4">
-            <p className="text-base mb-4">
+            <p className="text-base mb-4" style={{ textAlign: "justify" }}>
               Savvy Slice is an innovative online pizza ordering platform
               developed using the MERN (MongoDB, Express.js, React.js, Node.js)
               stack. This dynamic web application allows users to browse through
@@ -118,7 +118,7 @@ const Projects = () => {
               </div>
             </Carousel>
             <div className="mt-4">
-              <p className="text-base mb-4">
+              <p className="text-base mb-4" style={{ textAlign: "justify" }}>
                 The Self Journaling Platform is a transformative web application
                 designed to empower users on their journey of self-discovery and
                 personal growth. With intuitive journaling features, robust data

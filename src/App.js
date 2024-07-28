@@ -29,7 +29,7 @@ function App() {
           <p className=" text-[#d97d77] mt-5 text-4xl">
             I create full stack web applications.
           </p>
-          <p className="mt-5 text-lg w-2/4">
+          <p className="mt-5 text-lg w-2/4" style={{ textAlign: "justify" }}>
             I am currently pursuing my Bachelor's degree in Information
             Technology and am set to graduate in 2024. Throughout my academic
             journey, I have undertaken various full-stack web development

@@ -1,11 +1,11 @@
 .brand {
   width: 100px;
   height: 100px;
-  position: relative;
-  margin: 0 auto;
+  /* position: relative; */
+  margin-top: 20px;
 }
+
 .brand:before {
-  background-size: 100% 100%;
   content: "SK";
   line-height: 120px;
   color: #ff004e;
@@ -14,94 +14,62 @@
   text-align: center;
   width: 200px;
   height: 200px;
-  /* margin-top: -2.5rem;*/
   margin-left: -2.5rem;
   position: absolute;
-
-  z-index: 99999 !important;
+  z-index: 99999;
+  margin-top: -1.5rem;
 }
 
 .logo {
-  animation: 5s linear infinite;
-  animation-name: rotate-0;
-  animation-delay: 0s;
-  transform-origin: 50% 50%;
-  transform: rotate(0deg);
   margin-top: -1.5rem;
 }
 
 svg path {
-  positon: absolute;
   fill: none;
   stroke-width: 2;
-  top: 0;
-  left: 0;
-  /*mix-blend-mode: multiply;*/
   transform-origin: 50% 50%;
-  /*   transform: rotate(45deg) ;  */
-  animation: 4s linear infinite;
 }
 
-.logo svg path:nth-child(1) {
-  opacity: 1;
-  animation-name: rotate-1;
-  animation-delay: 0.5s;
-}
-.logo svg path:nth-child(2) {
-  opacity: 0.5;
-  animation-name: rotate-2;
-  animation-delay: 0.6s;
-}
-.logo svg path:nth-child(3) {
-  opacity: 0.8;
-  animation-name: rotate-3;
-  animation-delay: 0.7s;
+.path-1 {
+  stroke: #ff004e;
+  animation: rotate-1 6s linear infinite;
 }
 
-@keyframes scale-1 {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
-  }
+.path-2 {
+  stroke: #ff004e;
+  opacity: 0.6;
+  animation: rotate-2 6s linear infinite;
 }
 
-@keyframes rotate-0 {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
+.path-3 {
+  stroke: #ff004e;
+  opacity: 0.3;
+  animation: rotate-3 6s linear infinite;
 }
 
 @keyframes rotate-1 {
-  from {
-    transform: rotate(30deg);
+  0% {
+    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(30deg);
+  100% {
+    transform: rotate(360deg);
   }
 }
 
 @keyframes rotate-2 {
-  from {
-    transform: rotate(60deg);
+  0% {
+    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(60deg);
+  100% {
+    transform: rotate(-360deg);
   }
 }
 
 @keyframes rotate-3 {
-  from {
-    transform: rotate(90deg);
+  0% {
+    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(90deg);
+  100% {
+    transform: rotate(360deg);
   }
 }
