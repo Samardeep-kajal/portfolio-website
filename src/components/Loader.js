@@ -1,14 +1,14 @@
 import React from "react";
 import "../styles/loaderanim.css";
 
-const LogoAnim = () => {
+const Loader = () => {
   return (
-    <div class="brand">
-      <div class="logo">
-        <svg width="200px" height="200px">
+    <div className="loader-brand">
+      <div className="loader-logo">
+        <svg viewBox="0 0 200 200" width="150px" height="150px">
           <path
             stroke="#e85a4f"
-            stroke-width="0"
+            strokeWidth="0"
             fill="#e85a4f"
             d="M140.773,59.227C137.316,55.771,130.055,50,100,50
         s-37.317,5.771-40.774,9.227C55.77,62.684,49.999,69.104,50,100c-0.001,30.896,5.77,37.316,9.227,40.773
@@ -18,17 +18,7 @@ const LogoAnim = () => {
 
           <path
             stroke="#e85a4f"
-            stroke-width="0"
-            fill="#e85a4f"
-            d="M140.773,59.227C137.316,55.771,130.055,50,100,50
-        s-37.317,5.771-40.774,9.227C55.77,62.684,49.999,69.104,50,100c-0.001,30.896,5.77,37.316,9.227,40.773
-        C62.683,144.229,69.103,150,100,150c30.895,0,37.317-5.771,40.772-9.227C144.229,137.316,150,130.896,150,100
-        S144.229,62.683,140.773,59.227z"
-          />
-
-          <path
-            stroke="#e85a4f"
-            stroke-width="0"
+            strokeWidth="0"
             fill="#e85a4f"
             d="M140.773,59.227C137.316,55.771,130.055,50,100,50
         s-37.317,5.771-40.774,9.227C55.77,62.684,49.999,69.104,50,100c-0.001,30.896,5.77,37.316,9.227,40.773
@@ -41,4 +31,4 @@ const LogoAnim = () => {
   );
 };
 
-export default LogoAnim;
+export default Loader;

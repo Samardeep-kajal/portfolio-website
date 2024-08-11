@@ -5,7 +5,7 @@ const Logo = () => {
   return (
     <div className="brand">
       <div className="logo">
-        <svg viewBox="0 0 200 200" width="120px" height="120px">
+        <svg viewBox="0 0 200 200" width="110px" height="110px">
           <path
             className="path-1"
             d="M140.773,59.227C137.316,55.771,130.055,50,100,50

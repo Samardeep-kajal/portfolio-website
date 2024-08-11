@@ -9,19 +9,19 @@
   content: "SK";
   line-height: 120px;
   color: #ff004e;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   text-align: center;
   width: 200px;
   height: 200px;
-  margin-left: -2.5rem;
+  margin-left: -2.75rem;
   position: absolute;
   z-index: 99999;
-  margin-top: -1.5rem;
+  margin-top: -1.4rem;
 }
 
 .logo {
-  margin-top: -1.5rem;
+  margin-top: -1rem;
 }
 
 svg path {
@@ -32,19 +32,19 @@ svg path {
 
 .path-1 {
   stroke: #ff004e;
-  animation: rotate-1 6s linear infinite;
+  animation: rotate-1 18s linear infinite;
 }
 
 .path-2 {
   stroke: #ff004e;
   opacity: 0.6;
-  animation: rotate-2 6s linear infinite;
+  animation: rotate-2 18s linear infinite;
 }
 
 .path-3 {
   stroke: #ff004e;
   opacity: 0.3;
-  animation: rotate-3 6s linear infinite;
+  animation: rotate-3 18s linear infinite;
 }
 
 @keyframes rotate-1 {

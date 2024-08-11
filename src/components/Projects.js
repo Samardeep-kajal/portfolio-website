@@ -17,7 +17,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const Projects = () => {
   return (
     <div className="mt-24">
-      <h1 className="text-5xl font-Poppins mb-8">Projects</h1>
+      <h1 className="text-4xl font-semibold font-Poppins mb-8">Projects</h1>
       <div className="flex flex-wrap justify-center -mx-4">
         <div className="w-full ml-5">
           <h2 className="text-2xl font-semibold mb-2">Savvy Slice!</h2>

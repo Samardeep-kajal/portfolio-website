@@ -3,8 +3,17 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Loader from "./components/Loader";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
   const helloArray = ["Olá", "Hello", "Bonjour", "नमस्ते"];
   const [count, setCount] = useState(0);
 
@@ -16,25 +25,28 @@ function App() {
     return () => clearInterval(interval);
   }, [helloArray.length]);
 
+  if (loading) {
+    return <Loader />;
+  }
   return (
     <div className="font-Poppins">
       <div className="bg-[#E0E1DD] min-h-screen">
         {/* Background color applied to this wrapper */}
         <Navbar />
-        <div className="mt-32 ml-56 w-3/4">
+        <div className="mt-24 ml-40 w-3/4">
           <p className="text-[#4171b0] text-2xl ">
             {helloArray[count]}, my name is
           </p>
+
           <h1 className="mt-4 text-6xl font-bold ">Samardeep Kajal.</h1>
           <p className=" text-[#d97d77] mt-5 text-4xl">
             I create full stack web applications.
           </p>
           <p className="mt-5 text-lg w-2/4" style={{ textAlign: "justify" }}>
-            I am currently pursuing my Bachelor's degree in Information
-            Technology and am set to graduate in 2024. Throughout my academic
-            journey, I have undertaken various full-stack web development
-            projects, demonstrating my passion and dedication for software
-            development.
+            I have done my Bachelor of Technology in Information Technology in
+            2024. Throughout my academic journey, I have undertaken various
+            full-stack web development projects, demonstrating my passion and
+            dedication for software development.
           </p>
           <Skills />
           <Projects className="ml-5" />
