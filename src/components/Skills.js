@@ -22,10 +22,10 @@ import {
 
 const Skills = () => {
   return (
-    <div className=" font-Poppins mt-48 w-3/4">
-      <h1 className="text-4xl">My Skills</h1>
-      <h1 className="mt-5 text-2xl">Full Stack</h1>
-      <div className="mt-3 ml-11 grid grid-cols-2 md:grid-cols-4 gap-4 justify-around">
+    <div className="font-Poppins mt-48 ml-36 w-3/4">
+      <h1 className="text-3xl ml-24 underline">Skills</h1>
+      <h1 className="mt-5 underline ml-28 text-2xl">Full Stack</h1>
+      <div className="mt-3 ml-11 grid grid-cols-2 md:grid-cols-5 gap-4 justify-around">
         <div className="logo-card flex flex-col items-center">
           <img src={nextLogo} className="h-16 w-16" alt="Git Logo" />
           <p className="text-sm mt-2 text-center">Next.js</p>
@@ -68,7 +68,7 @@ const Skills = () => {
         </div>
       </div>
       {/* LANGUAGE Section */}
-      <h1 className="mt-3 text-3xl">Languages</h1>
+      <h1 className="mt-10 ml-28 underline text-2xl">Languages</h1>
       <div className="mt-3 justify-evenly flex flex-row flex-wrap">
         <div className="logo-card">
           <img src={javaLogo} className="h-16 w-16" alt="Git Logo" />
@@ -83,7 +83,7 @@ const Skills = () => {
           <p className="text-sm mt-2 text-center">Typescript</p>
         </div>
       </div>
-      <h1 className="mt-3 text-3xl">Tools</h1>
+      <h1 className="mt-10 ml-28 underline text-2xl">Tools</h1>
       <div className="mt-3 justify-evenly flex flex-row flex-wrap">
         <div className="logo-card">
           <img src={githubLogo} className="h-16 w-16" alt="Git Logo" />

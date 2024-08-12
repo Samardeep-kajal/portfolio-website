@@ -16,17 +16,17 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Projects = () => {
   return (
-    <div className="mt-24">
-      <h1 className="text-4xl font-semibold font-Poppins mb-8">Projects</h1>
+    <div className="mt-24 ml-52 w-4/6">
+      <h1 className="text-3xl underline font-Poppins mb-8">Projects</h1>
       <div className="flex flex-wrap justify-center -mx-4">
-        <div className="w-full ml-5">
+        <div className="w-full ml-20">
           <h2 className="text-2xl font-semibold mb-2">Savvy Slice!</h2>
           {/* <div className="project flex flex-col md:flex-row"> */}
           <Carousel
             showArrows={true}
             showThumbs={false}
             showIndicators={false}
-            className="w-3/4"
+            className="w-3/4 content-center"
           >
             <div>
               <img src={savvySliceLanding} alt="Project Image" />
@@ -78,21 +78,21 @@ const Projects = () => {
                   alt="External Link"
                 />
               </button>
-              <button className="border-black border-2 px-3 mr-2 h-14 font-semibold hover:bg-[#778DA9] rounded-md flex items-center transition-colors duration-300 ease-in-out">
+              {/* <button className="border-black border-2 px-3 mr-2 h-14 font-semibold hover:bg-[#778DA9] rounded-md flex items-center transition-colors duration-300 ease-in-out">
                 See Project{" "}
                 <img
                   src={externalLink}
                   className="h-5 w-5 ml-1"
                   alt="External Link"
                 />
-              </button>
+              </button> */}
               {/* </div> */}
             </div>
           </div>
           {/* Add more projects here */}
         </div>
         <div className="flex flex-wrap justify-center -mx-4 mt-10">
-          <div className="w-full ml-10">
+          <div className="w-full ml-20 mt-5">
             <h2 className="text-2xl font-semibold mb-2">SelfJournal</h2>
             {/* <div className="project flex flex-col md:flex-row"> */}
             <Carousel
@@ -155,14 +155,14 @@ const Projects = () => {
                     alt="External Link"
                   />
                 </button>
-                <button className="border-black border-2 px-3 mr-2 h-14 font-semibold hover:bg-[#778DA9] rounded-md flex items-center transition-colors duration-300 ease-in-out">
+                {/* <button className="border-black border-2 px-3 mr-2 h-14 font-semibold hover:bg-[#778DA9] rounded-md flex items-center transition-colors duration-300 ease-in-out">
                   See Project{" "}
                   <img
                     src={externalLink}
                     className="h-5 w-5 ml-1"
                     alt="External Link"
                   />
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

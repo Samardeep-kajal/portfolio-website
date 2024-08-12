@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Logo from "./Logo";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isHidden, setIsHidden] = useState(false);
@@ -31,13 +32,24 @@ const Navbar = () => {
       {/* Desktop Navigation */}
       <ul className="hidden md:flex font-Poppins mr-8">
         <li className="p-4  hover:text-[#e85a4f] rounded-xl m-4 cursor-pointer ">
-          <a href="#about">About</a>
+          <Link to="home" smooth={true} duration={800}>
+            <a href="#about">About.</a>
+          </Link>
         </li>
         <li className="p-4 hover:text-[#e85a4f] rounded-xl m-4 cursor-pointer ">
-          <a href="#projects">Work</a>
+          <Link to="skills" smooth={true} duration={800}>
+            <a href="#skills">Skills.</a>
+          </Link>
         </li>
         <li className="p-4 hover:text-[#e85a4f] rounded-xl m-4 cursor-pointer ">
-          <a href="#contact">Contact</a>
+          <Link to="experience" smooth={true} duration={800}>
+            <a href="#experience">Experience.</a>
+          </Link>
+        </li>
+        <li className="p-4 hover:text-[#e85a4f] rounded-xl m-4 cursor-pointer ">
+          <Link to="projects" smooth={true} duration={800}>
+            <a href="#projects">Projects.</a>
+          </Link>
         </li>
       </ul>
     </div>

@@ -1,0 +1,54 @@
+.experience-container {
+  /* margin: 0 auto; */
+  padding: 2rem;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  border-left: 4px solid #4171b0;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -14px;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #d97d77;
+  border-radius: 50%;
+  border: 2px solid #4171b0;
+}
+
+.timeline-content {
+  padding-left: 2rem;
+}
+
+.timeline-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4171b0;
+}
+
+.timeline-company {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.timeline-description {
+  margin-top: 1rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.timeline-description li {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
