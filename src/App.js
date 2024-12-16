@@ -45,33 +45,33 @@ function App() {
     <div className="font-Poppins">
       <Navbar handleScrollTo={handleScrollTo} />
       <Element name="home" className="section">
-        <div className="mt-12 flex justify-center">
-          <div className="flex flex-row items-center w-3/4">
-            <div className="w-3/5">
-              <p className="text-[#4171b0] text-2xl">
-                {helloArray[count]}, my name is
-              </p>
-              <h1 className="mt-4 text-6xl font-bold">Samardeep Kajal.</h1>
-              <p className="text-[#d97d77] mt-5 text-4xl">
-                I create full stack web applications.
-              </p>
-              <p className="mt-5 text-lg" style={{ textAlign: "justify" }}>
-                I am currently pursuing my Bachelor's degree in Information
-                Technology and am set to graduate in 2024. Throughout my
-                academic journey, I have undertaken various full-stack web
-                development projects, demonstrating my passion and dedication
-                for software development.
-              </p>
-            </div>
-            <div className="w-2/5 flex justify-center ml-24">
-              <img
-                src={samardeepImage}
-                alt="Samardeep Kajal"
-                className="border-4 border-solid border-[#d97d77] rounded-full h-5/6 w-5/6 object-cover"
-                onContextMenu={(e) => e.preventDefault()}
-                draggable="false"
-              />
-            </div>
+        <div className="mt-12 flex flex-col md:flex-row items-center md:justify-center">
+          <div className="md:w-3/5 w-full px-4">
+            <p className="text-[#4171b0] text-xl md:text-2xl">
+              {helloArray[count]}, my name is
+            </p>
+            <h1 className="mt-4 text-4xl md:text-6xl font-bold">
+              Samardeep Kajal.
+            </h1>
+            <p className="text-[#d97d77] mt-5 text-2xl md:text-4xl">
+              I create full stack web applications.
+            </p>
+            <p className="mt-5 text-sm md:text-lg text-justify">
+              I am currently pursuing my Bachelor's degree in Information
+              Technology and am set to graduate in 2024. Throughout my academic
+              journey, I have undertaken various full-stack web development
+              projects, demonstrating my passion and dedication for software
+              development.
+            </p>
+          </div>
+          <div className="md:w-2/5 w-full flex justify-center mt-8 md:mt-0">
+            <img
+              src={samardeepImage}
+              alt="Samardeep Kajal"
+              className="border-4 border-solid border-[#d97d77] rounded-full h-48 w-48 md:h-5/6 md:w-5/6 object-cover"
+              onContextMenu={(e) => e.preventDefault()}
+              draggable="false"
+            />
           </div>
         </div>
       </Element>
