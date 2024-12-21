@@ -16,17 +16,19 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Projects = () => {
   return (
-    <div className="mt-24 ml-52 w-4/6">
-      <h1 className="text-3xl underline font-Poppins mb-8">Projects</h1>
+    <div className="md:mt-24 md:ml-52 md:w-4/6">
+      <h1 className="text-3xl ml-36 md:ml-0 underline font-Poppins mb-8">
+        Projects
+      </h1>
       <div className="flex flex-wrap justify-center -mx-4">
-        <div className="w-full ml-20">
+        <div className="w-4/5 md:w-full ml-2 md:ml-20">
           <h2 className="text-2xl font-semibold mb-2">Savvy Slice!</h2>
           {/* <div className="project flex flex-col md:flex-row"> */}
           <Carousel
             showArrows={true}
             showThumbs={false}
             showIndicators={false}
-            className="w-3/4 content-center"
+            className="md:w-3/4 content-center"
           >
             <div>
               <img src={savvySliceLanding} alt="Project Image" />
@@ -92,14 +94,14 @@ const Projects = () => {
           {/* Add more projects here */}
         </div>
         <div className="flex flex-wrap justify-center -mx-4 mt-10">
-          <div className="w-full ml-20 mt-5">
+          <div className="w-3/4 md:w-full ml-2 md:ml-20">
             <h2 className="text-2xl font-semibold mb-2">SelfJournal</h2>
             {/* <div className="project flex flex-col md:flex-row"> */}
             <Carousel
               showArrows={true}
               showThumbs={false}
               showIndicators={false}
-              className="w-3/4"
+              className="md:w-3/4 content-center"
             >
               <div>
                 <img src={selfJournalLanding} alt="Project Image" />
@@ -118,7 +120,10 @@ const Projects = () => {
               </div>
             </Carousel>
             <div className="mt-4">
-              <p className="text-base mb-4" style={{ textAlign: "justify" }}>
+              <p
+                className="text-base mb-4 text-justify md:text-left"
+                style={{ textAlign: "justify" }}
+              >
                 The Self Journaling Platform is a transformative web application
                 designed to empower users on their journey of self-discovery and
                 personal growth. With intuitive journaling features, robust data
