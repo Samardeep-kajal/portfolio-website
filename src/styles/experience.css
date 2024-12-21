@@ -52,3 +52,17 @@
   margin-bottom: 0.5rem;
   color: #333;
 }
+
+@media (max-width: 768px) {
+  .timeline-title {
+    font-size: 1.25rem;
+  }
+
+  .timeline-company {
+    font-size: 1rem;
+  }
+
+  .timeline-description li {
+    font-size: 0.875rem;
+  }
+}
