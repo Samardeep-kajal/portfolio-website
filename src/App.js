@@ -42,11 +42,11 @@ function App() {
   }
 
   return (
-    <div className="font-Poppins">
+    <div className="font-Poppins w-full fixed mt-12 h-screen overflow-y-auto overflow-x-hidden">
       <Navbar handleScrollTo={handleScrollTo} />
       <Element name="home" className="section">
-        <div className="mt-12 flex flex-col md:flex-row items-center md:justify-center">
-          <div className="md:w-3/5 w-full px-4">
+        <div className="mt-24 flex flex-col md:flex-row items-center md:justify-center md:ml-28 md:mt-12">
+          <div className="md:w-2/4 px-4">
             <p className="text-[#4171b0] text-xl md:text-2xl">
               {helloArray[count]}, my name is
             </p>
@@ -68,7 +68,7 @@ function App() {
             <img
               src={samardeepImage}
               alt="Samardeep Kajal"
-              className="border-4 border-solid border-[#d97d77] rounded-full h-48 w-48 md:h-5/6 md:w-5/6 object-cover"
+              className="border-4 border-solid border-[#d97d77] rounded-full h-52 w-52 md:h-3/6 md:w-3/6 object-cover"
               onContextMenu={(e) => e.preventDefault()}
               draggable="false"
             />

@@ -28,7 +28,7 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <div className="w-full fixed top-0">
       <div
         className={`bg-[#1b263b] flex justify-between items-center h-16 max-w-h mx-auto px-4 z-10 text-white sticky top-0 transition-transform ${
           isHidden ? "-translate-y-full" : ""

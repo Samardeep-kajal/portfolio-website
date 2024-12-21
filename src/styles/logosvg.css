@@ -1,7 +1,6 @@
 .brand {
   width: 100px;
   height: 100px;
-  /* position: relative; */
   margin-top: 20px;
 }
 
@@ -22,6 +21,18 @@
 
 .logo {
   margin-top: -1rem;
+  /* margin-left: -1.75rem; */
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+  .brand:before {
+    margin-left: -4.5rem;
+  }
+
+  .logo {
+    margin-left: -1.75rem;
+  }
 }
 
 svg path {
