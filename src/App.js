@@ -45,7 +45,7 @@ function App() {
     <div className="font-Poppins w-full fixed mt-12 h-screen overflow-y-auto overflow-x-hidden">
       <Navbar handleScrollTo={handleScrollTo} />
       <Element name="home" className="section">
-        <div className="mt-24 flex flex-col md:flex-row items-center md:justify-center md:ml-28 md:mt-12">
+        <div className="mt-24 flex flex-col md:flex-row items-center md:justify-center md:ml-36  md:mt-12">
           <div className="md:w-2/4 px-4">
             <p className="text-[#4171b0] text-xl md:text-2xl">
               {helloArray[count]}, my name is

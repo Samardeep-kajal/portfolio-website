@@ -28,9 +28,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full fixed top-0">
+    <div className="w-full fixed top-0 z-50">
       <div
-        className={`bg-[#1b263b] flex justify-between items-center h-16 max-w-h mx-auto px-4 z-10 text-white sticky top-0 transition-transform ${
+        className={`bg-[#1b263b] flex justify-between items-center h-16 max-w-h mx-auto px-4 z-20 text-white sticky top-0 transition-transform ${
           isHidden ? "-translate-y-full" : ""
         }`}
       >
@@ -110,7 +110,9 @@ const Navbar = () => {
             className="flex items-center justify-center w-20 h-20 border-2 border-[#ff004e] rounded-3xl font-bold mx-auto mb-8"
             style={{ transform: "rotate(45deg)" }}
           >
-            <span style={{ transform: "rotate(-45deg)" }}>sam</span>
+            <span style={{ transform: "rotate(-45deg)", color: "#ff004e" }}>
+              Sam
+            </span>
           </div>
           <ul className="font-Poppins text-xl text-white mt-52 ml-2">
             <li className="p-2 hover:text-[#e85a4f] m-4 cursor-pointer ml-12 mr-4">
