@@ -4,20 +4,60 @@ import "../styles/experience.css";
 const Experience = () => {
   const experiences = [
     {
+      title: "Application Developer",
+      company: "NCR Atleos",
+      date: "Sep 2024 - Present",
+      description: [
+        "⦿ Working in the Portfolio Management team, managing projects and enhancing an in-house portfolio management tool.",
+        "⦿ Supporting 700+ active users within the organization by optimizing and maintaining the tool’s performance.",
+        "⦿ Collaborating with cross-functional teams to improve portfolio tracking and reporting features.",
+        "⦿ Streamlining project management workflows to ensure efficiency and scalability.",
+        "⦿ Skills: PHP, jQuery, JavaScript, SQL Database, Tool Optimization",
+      ],
+    },
+    {
       title: "Software Engineer Intern",
       company: "NCR Atleos",
-      date: "Feb 2024 - Present",
+      date: "Feb 2024 - Aug 2024 (6 mos.)",
       description: [
-        "⦿ Developed a robust full-stack web application using Next.js, aimed at capturing and managing innovative ideas within an organization.",
-        "⦿ Employed TypeScript for enhanced code reliability and maintainability, ensuring a scalable and type-safe codebase.",
-        "⦿ Designed and implemented RESTful APIs with Express.js, facilitating seamless communication between the client and server.",
-        "⦿ Utilized Sequelize ORM to manage and interact with a PostgreSQL database, ensuring efficient data handling and integrity.",
-        "⦿ Integrated Redux for state management, enabling efficient handling of application state and asynchronous actions with Redux Thunk.",
-        "⦿ Implemented comprehensive role-based access control using custom enums in PostgreSQL, ensuring data security and user management.",
-        "⦿ Designed and implemented automated triggers in the database to manage timestamps, ensuring data accuracy and consistency.",
+        "⦿ Developed a full-stack web application using Next.js for managing innovative ideas within our organization.",
+        "⦿ Utilized TypeScript for a scalable and type-safe codebase.",
+        "⦿ Designed RESTful APIs with Express.js for client-server communication.",
+        "⦿ Managed PostgreSQL database with Sequelize ORM.",
+        "⦿ Leveraged Redux for efficient and centralized state management.",
+        "⦿ Implemented RBAC using custom enums in PostgreSQL.",
+        "⦿ Created automated triggers for database timestamp management.",
       ],
     },
   ];
+
+  const underlineKeywords = (text) => {
+    const keywords = [
+      "Next.js",
+      "TypeScript",
+      "RESTful APIs",
+      "Express.js",
+      "Sequelize ORM",
+      "PostgreSQL",
+      "Redux",
+      "RBAC",
+      "custom enums",
+      "automated triggers",
+      "Skills",
+      "700+",
+    ];
+
+    const regex = new RegExp(`\\b(${keywords.join("|")})\\b`, "gi");
+    return text.split(regex).map((part, index) =>
+      keywords.includes(part) ? (
+        <span key={index} className="wavy-underline">
+          {part}
+        </span>
+      ) : (
+        part
+      )
+    );
+  };
 
   return (
     <div className="experience-container mt-32 md:mt-40 md:ml-52 md:text-justify w-full md:w-3/5">
@@ -35,7 +75,7 @@ const Experience = () => {
               </p>
               <ul className="timeline-description md:justify-normal">
                 {exp.description.map((desc, i) => (
-                  <li key={i}>{desc}</li>
+                  <li key={i}>{underlineKeywords(desc)}</li>
                 ))}
               </ul>
             </div>

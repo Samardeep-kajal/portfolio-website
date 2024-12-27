@@ -57,11 +57,11 @@ function App() {
               I create full stack web applications.
             </p>
             <p className="mt-5 text-sm md:text-lg text-justify">
-              I am currently pursuing my Bachelor's degree in Information
-              Technology and am set to graduate in 2024. Throughout my academic
-              journey, I have undertaken various full-stack web development
-              projects, demonstrating my passion and dedication for software
-              development.
+              I am a Bachelor of Technology in Information Technology and
+              currently working as an Application Developer at NCR Atleos. With
+              experience in full-stack web development across personal and
+              professional projects, I am dedicated to creating innovative
+              software solutions.
             </p>
           </div>
           <div className="md:w-2/5 w-full flex justify-center mt-8 md:mt-0">
