@@ -18,7 +18,7 @@ const Experience = () => {
     {
       title: "Software Engineer Intern",
       company: "NCR Atleos",
-      date: "Feb 2024 - Aug 2024 (6 mos.)",
+      date: "Feb 2024 - Aug 2024",
       description: [
         "⦿ Developed a full-stack web application using Next.js for managing innovative ideas within our organization.",
         "⦿ Utilized TypeScript for a scalable and type-safe codebase.",
@@ -44,10 +44,10 @@ const Experience = () => {
       "custom enums",
       "automated triggers",
       "Skills",
-      "700+",
+      "700+ active",
     ];
 
-    const regex = new RegExp(`\\b(${keywords.join("|")})\\b`, "gi");
+    const regex = new RegExp(`(${keywords.join("|")})`, "gi");
     return text.split(regex).map((part, index) =>
       keywords.includes(part) ? (
         <span key={index} className="wavy-underline">

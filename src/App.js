@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Loader from "./components/Loader";
-import samardeepImage from "./media/samardeep.PNG";
+import samardeepImage from "./media/samardeep.jpg";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 
