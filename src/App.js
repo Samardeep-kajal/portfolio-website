@@ -54,21 +54,22 @@ function App() {
               Samardeep Kajal.
             </h1>
             <p className="text-[#d97d77] mt-5 text-2xl md:text-4xl">
-              I create full stack web applications.
+              I build scalable, data-driven products.
             </p>
             <p className="mt-5 text-sm md:text-lg text-justify">
-              I am a Bachelor of Technology in Information Technology and
-              currently working as an Application Developer at NCR Atleos. With
-              experience in full-stack web development across personal and
-              professional projects, I am dedicated to creating innovative
-              software solutions.
+              Full-stack developer with hands-on experience building and
+              supporting an IT Project Portfolio Management (PPM) tool used
+              within an enterprise environment. Currently working as an
+              Application Developer at NCR Atleos, I specialize in creating
+              scalable solutions with real business impact from UI and APIs to
+              database design and integrations.
             </p>
           </div>
           <div className="md:w-2/5 w-full flex justify-center mt-8 md:mt-0">
             <img
               src={samardeepImage}
               alt="Samardeep Kajal"
-              className="border-4 border-solid border-[#d97d77] rounded-full h-52 w-52 md:h-3/6 md:w-3/6 object-cover"
+              className="border-4 border-solid border-[#d97d77] rounded-full h-52 w-52 md:h-80 md:w-80 object-cover"
               onContextMenu={(e) => e.preventDefault()}
               draggable="false"
             />
@@ -85,9 +86,8 @@ function App() {
         <Projects />
       </Element>
       <Contact />
-      <footer className="mt-10 py-6 text-center text-gray-600 bg-gray-200">
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-        <p>Designed with ❤️ by me</p>
+      <footer className="mt-10 py-4 pb-8 text-center text-sm text-gray-500 mb-8">
+        <p>&copy; 2026 Samardeep Kajal · Built with React</p>
       </footer>
     </div>
   );

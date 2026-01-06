@@ -71,14 +71,20 @@ const Projects = () => {
               </span>
             </div>
             <div className="flex flex-wrap">
-              <button className="border-black text border-2 px-3 mr-2 h-14 font-semibold hover:bg-[#778DA9] rounded-md flex items-center transition-colors duration-300 ease-in-out">
-                Check Github{" "}
-                <img
-                  src={externalLink}
-                  className="h-5 w-5 ml-1"
-                  alt="External Link"
-                />
-              </button>
+              <a
+                href="https://github.com/Samardeep-kajal/savvy-slice"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="border-black text border-2 px-3 mr-2 h-14 font-semibold hover:bg-[#778DA9] rounded-md flex items-center transition-colors duration-300 ease-in-out">
+                  Check Github{" "}
+                  <img
+                    src={externalLink}
+                    className="h-5 w-5 ml-1"
+                    alt="External Link"
+                  />
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -136,14 +142,20 @@ const Projects = () => {
                 </span>
               </div>
               <div className="flex flex-wrap">
-                <button className="border-black text border-2 px-3 mr-2 h-14 font-semibold hover:bg-[#778DA9] rounded-md flex items-center transition-colors duration-300 ease-in-out">
-                  Check Github{" "}
-                  <img
-                    src={externalLink}
-                    className="h-5 w-5 ml-1"
-                    alt="External Link"
-                  />
-                </button>
+                <a
+                  href="https://github.com/Samardeep-kajal/self-journal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="border-black text border-2 px-3 mr-2 h-14 font-semibold hover:bg-[#778DA9] rounded-md flex items-center transition-colors duration-300 ease-in-out">
+                    Check Github{" "}
+                    <img
+                      src={externalLink}
+                      className="h-5 w-5 ml-1"
+                      alt="External Link"
+                    />
+                  </button>
+                </a>
                 {/* <button className="border-black border-2 px-3 mr-2 h-14 font-semibold hover:bg-[#778DA9] rounded-md flex items-center transition-colors duration-300 ease-in-out">
                   See Project{" "}
                   <img
